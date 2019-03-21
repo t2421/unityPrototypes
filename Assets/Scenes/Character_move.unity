@@ -306,12 +306,49 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &919810808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9096033576381470497, guid: 665e0508d99234f828795aef3567be9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 9096033577298912729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!195 &919810809 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 919810809, guid: 665e0508d99234f828795aef3567be9d,
     type: 3}
   m_PrefabInstance: {fileID: 9096033577298912729}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &919810814
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919810808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47d37e07ee8884435aa42f8a296b4d88, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &919810815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919810808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118b93e41645f406b99b52998edcf698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1404874888
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +692,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919810809, guid: 665e0508d99234f828795aef3567be9d, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 919810809, guid: 665e0508d99234f828795aef3567be9d, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 665e0508d99234f828795aef3567be9d, type: 3}

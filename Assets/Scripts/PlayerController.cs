@@ -5,17 +5,19 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    //private Animator anim;
+    private Animator anim;
     private NavMeshAgent agent;
     void Awake()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        anim.SetFloat("Speed", agent.speed);
     }
 }
